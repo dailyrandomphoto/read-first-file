@@ -1,0 +1,70 @@
+{
+  "name": "read-first-file",
+  "version": "0.0.4",
+  "description": "Read the frist file from a directory.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "prettier --write . && xo",
+    "lint:fix": "prettier --write . && xo --fix",
+    "test": "mocha test.js",
+    "test:cov": "nyc npm run test",
+    "test:loop": "while npm test --silent; do :; done",
+    "preinstall": "unlink-self 2>&1 | echo unlink-self"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^8.0.0",
+    "nyc": "^15.0.0",
+    "prettier": "latest",
+    "read-first-file": "file:.",
+    "unlink-self": "latest",
+    "xo": "latest"
+  },
+  "keywords": [
+    "read",
+    "first",
+    "last",
+    "file",
+    "directory",
+    "readfiles",
+    "readfile",
+    "readdir"
+  ],
+  "files": [
+    "index.js",
+    "LICENSE",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=8.6.0"
+  },
+  "author": "dailyrandomphoto <dailyrandomphoto@gmail.com> (https://www.dailyrandomphoto.com/)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dailyrandomphoto/read-first-file.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dailyrandomphoto/read-first-file/issues"
+  },
+  "homepage": "https://github.com/dailyrandomphoto/read-first-file#readme",
+  "xo": {
+    "space": 2,
+    "prettier": true,
+    "rules": {
+      "promise/prefer-await-to-then": 0,
+      "capitalized-comments": 0
+    },
+    "overrides": [
+      {
+        "files": "test.js",
+        "envs": [
+          "node",
+          "mocha"
+        ]
+      }
+    ]
+  }
+}
