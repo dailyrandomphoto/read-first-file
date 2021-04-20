@@ -5,7 +5,7 @@
 [![Build Status][travis-image]][travis-url]
 [![code style: prettier][code-style-prettier-image]][code-style-prettier-url]
 
-Read the frist file from a directory.
+Read the first file from a directory.
 
 ## Installation
 
